@@ -1,10 +1,22 @@
 import { AiFillWarning } from "react-icons/ai"
+import { IoIosCloseCircle } from "react-icons/io";
+import { FaCheckCircle } from "react-icons/fa";
+import { BsFillInfoCircleFill } from "react-icons/bs";
+export default function Banner({ title, text, type }) {
 
-export default function Banner({ title, text, allClassName }) {
+    let icon;
+
+    if (type == "error") icon = <IoIosCloseCircle />;
+    else if (type == "warning") icon = <AiFillWarning />;
+    else if (type == "info") icon = <BsFillInfoCircleFill />;
+    else icon = <FaCheckCircle />;
+
+
+
     return (
-        <div className={`banner ${allClassName}`}>
+        <div className={`banner ${type}`}>
             <div className="icon-box">
-                <AiFillWarning />
+                {icon}
             </div>
             <div>
                 <h3>{title}</h3>
