@@ -5,6 +5,7 @@ import Card from './components/Card'
 import Testimonial from './components/Testimonial'
 import profileImg from "./assets/profile.png"
 import { HiOutlineCloudUpload } from "react-icons/hi";
+import { SiSpeedtest } from "react-icons/si";
 
 
 
@@ -77,6 +78,15 @@ function App() {
           text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas veniam expedita quia ipsam soluta."
           firstColor="#cca300"
           secondColor="#fff5cc"
+        />
+
+        <Card
+          title="Rapid development"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quas voluptate ducimus inventore velit suscipit."
+          icon={<SiSpeedtest />}
+          firstColor="#f95f39"
+          secondColor="#1a1a19"
+          textColor="#fdfdfd"
         />
 
         <Card
