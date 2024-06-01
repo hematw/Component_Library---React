@@ -151,6 +151,10 @@ main {
   width: 100%;
 }
 
+.testimonial {
+  margin: 2em 0;
+}
+
 .testimonial .text {
   font-size: 1em;
   line-height: 1.5em;
@@ -175,34 +179,6 @@ main {
 .flex-container {
   display: flex;
   gap: 1em;
-}
-
-/* Colors codes */
-.danger, .error {
-  background-color: #FEE2E1;
-  color: #981C18;
-}
-.warning {
-  background-color: #FEF3C7;
-  color: #964616;
-}
-.neutral {
-  background-color: #DBEAFF;
-  color: #1D3FAD;
-}
-.success {
-  background-color: #D0FAE4;
-  color: #096144;
-}
-.violet {
-  background-color: #EDEAFF;
-  color: #5A20B7;
-}
-.indigo {
-  background-color: #E1E7FF;
-  color: #3D34A5;
-}
-.pink {
-  background-color: #F1F1F1;
-  color: #9E164C;
+  flex-wrap: wrap;
+  justify-content: center;
 }

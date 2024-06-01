@@ -83,6 +83,7 @@ function App() {
           title="Easy deployment"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quas voluptate ducimus inventore velit suscipit."
           icon={<HiOutlineCloudUpload />}
+          firstColor="#f95f39"
         />
 
         <Testimonial
@@ -92,6 +93,15 @@ function App() {
           img={profileImg}
           backColor="#2545b8"
           textColor="#fdfdfd"
+        />
+
+        <Testimonial
+          opnion="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem voluptate quisquam voluptates. Quia, nisi."
+          name="Hemat Waziri"
+          job="Frontend Dev"
+          img={"https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/12/09/20231209_135156-1089983506.jpg"}
+          backColor="#f95f39"
+          textColor="#fff"
         />
       </main>
     </>
