@@ -1,6 +1,5 @@
 #root {
   width: 100%;
-  padding: 2rem;
 }
 
 main {
@@ -8,6 +7,8 @@ main {
   flex-direction: column;
   gap: 3em;
   align-items: center;
+  padding: 4em 1em;
+  background-color: #31363F;
 }
 
 
@@ -169,6 +170,11 @@ main {
 
 .testimonial .job {
   font-weight: 300;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1em;
 }
 
 /* Colors codes */

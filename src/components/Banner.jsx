@@ -2,7 +2,7 @@ import { AiFillWarning } from "react-icons/ai"
 import { IoIosCloseCircle } from "react-icons/io";
 import { FaCheckCircle } from "react-icons/fa";
 import { BsFillInfoCircleFill } from "react-icons/bs";
-export default function Banner({ title, text, type }) {
+export default function Banner({ title, text, type, firstColor, secondColor }) {
 
     let icon;
 
@@ -12,9 +12,13 @@ export default function Banner({ title, text, type }) {
     else icon = <FaCheckCircle />;
 
 
+    const styles = {
+        backgroundColor: secondColor,
+        color: firstColor
+    }
 
     return (
-        <div className={`banner ${type}`}>
+        <div className={`banner`} style={styles}>
             <div className="icon-box">
                 {icon}
             </div>

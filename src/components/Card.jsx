@@ -1,10 +1,9 @@
-import { HiOutlineCloudUpload } from "react-icons/hi";
 
-export default function Card({ children, allClassName, title, text }) {
+export default function Card({ icon, allClassName, title, text }) {
     return (
         <div className={`card ${allClassName}`}>
             <div className="icon">
-                <HiOutlineCloudUpload />
+                {icon}
             </div>
 
             <h3>{title}</h3>
